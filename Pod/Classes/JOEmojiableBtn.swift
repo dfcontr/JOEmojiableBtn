@@ -257,7 +257,13 @@ public class JOEmojiableBtn: UIButton {
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        self.spacing            = 6
+        self.size               = 40
+        self.minSize            = 34
+        self.maxSize            = 80
+        self.s_options_selector = 30
+        super.init(coder: aDecoder)
+        self.initialize()
     }
 }
 
